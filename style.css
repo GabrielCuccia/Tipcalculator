@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator-container {
+  background-color: var(--White);
+  padding: 35px;
+  border-radius: 20px;
+  width: 347px;
+  margin: auto;
+}
+
+body {
+  background-color: var(--Light-grayish-cyan);
+  font-size: 24px;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 2px;
+  padding: 20px;
+  color: var(--Dark-grayish-cyan);
+}
+
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.inputs-section__bill-label {
+  display: block;
+  font-size: 0.75em;
+  color: var(--Dark-grayish-cyan);
+}
+
+.inputs-section__bill-input {
+  text-align: right;
+  border: none;
+  width: 100%;
+  padding: 2px;
+  padding-right: 10px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-image: url(../images/icon-dollar.svg);
+  background-position: 10px center;
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+.inputs-section__bill-input:focus {
+  outline: none;
+  border: 2px solid var(--Strong-cyan);
+}
+
+.inputs-section__bill-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.btns {
+  border: none;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.btns__legend {
+  font-size: 0.75em;
+  color: var(--Dark-grayish-cyan);
+}
+
+.btns__button {
+  margin-bottom: 5px;
+  height: 45px;
+  width: 137px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-grayish-cyan);
+}
+
+.btns__custom {
+  text-align: center;
+  border: none;
+  width: 100%;
+  padding: 2px;
+  padding-right: 10px;
+  height: 48px;
+  background-color: var(--Very-light-grayish-cyan);
+  font-size: 0.75em;
+}
+
+.btns__custom:focus {
+  outline: none;
+}
+
+.btns__custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/*# sourceMappingURL=style.css.map */
