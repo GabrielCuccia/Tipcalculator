@@ -1,0 +1,2 @@
+# Tipcalculator
+Calculator of propines
