@@ -56,6 +56,7 @@ body {
   background-position: 10px center;
   background-color: var(--Very-light-grayish-cyan);
   color: var(--Very-dark-cyan);
+  font-size: 1em;
 }
 
 .inputs-section__bill-input:focus {
@@ -78,6 +79,7 @@ body {
 .btns__legend {
   font-size: 0.75em;
   color: var(--Dark-grayish-cyan);
+  padding-bottom: 10px;
 }
 
 .btns__button {
@@ -89,6 +91,12 @@ body {
   border-radius: 5px;
   background-color: var(--Very-dark-cyan);
   color: var(--Very-light-grayish-cyan);
+}
+.btns__button:hover{
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+  transition: 0.1s;
 }
 
 .btns__custom {
@@ -109,5 +117,78 @@ body {
 .btns__custom::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+.inputs-section__people-label{
+  font-size: 0.75em;
+  color: var(--Dark-grayish-cyan);
+}
+.inputs-section__people-input{
+  text-align: right;
+  border: none;
+  width: 100%;
+  padding: 2px;
+  padding-right: 10px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-image: url(../images/icon-person.svg);
+  background-position: 10px center;
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+  font-size: 1em;
+}
+.inputs-section__people-input:focus{
+  outline: none;
+  border: 2px solid var(--Strong-cyan);
+}
+.inputs-section__people-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.result-container{
+  background-color: var(--Very-dark-cyan);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 24px 24px;
+  margin-top: 15px;
+}
+.results{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ 
+ 
+}
+.results div{
+  font-size: 0.75em;
+}
+.results__total-person, .results__tip-person{
+  font-size: 0.75em;
+  color: var(--Dark-grayish-cyan);
+  
+}
+.results__tip-amount, .results__total-amount{
+  color: white;
+  font-size: 1em;
+}
+.results__tip-value{
+  font-size: 1.4em;
+  color: var(--Strong-cyan);
+  text-align: right
+}
+.results__btn{
+  
+  border: none;
+  background-color: var(--Strong-cyan);
+  cursor: pointer;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 0.75em;
+  color: var(--Very-dark-cyan);
+  border-radius: 5px;
+}
+.results__btn:hover{
+  background-color: var(--Light-grayish-cyan);
+  transition: 0.1s;
+}
+
 
 /*# sourceMappingURL=style.css.map */
