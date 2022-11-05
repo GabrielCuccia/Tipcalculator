@@ -22,11 +22,11 @@
     <div class="inputs-section">
 
       <label class="inputs-section__bill-label" for="bill">Bill</label>
-      <input class="inputs-section__bill-input" id="bill" type="number" value="0">
+      <input class="inputs-section__bill-input" id="bill" type="number" value="100">
 
       <fieldset class="btns">
         <legend class="btns__legend">Select Tip %</legend>
-        <button class="btns__button">5%</button>
+        <button class="btns__button btns__button--selected">5%</button>
         <button class="btns__button">10%</button>
         <button class="btns__button">15%</button>
         <button class="btns__button">20%</button>
@@ -34,24 +34,26 @@
         <input class="btns__custom" type="number" placeholder="Custom">
       </fieldset>
 
-      <label class="inputs-section__people-label" for="people">Number of People</label>
-      <input class="inputs-section__people-input" id="people" type="number" value="5">
+      <div class="number-of-people">
+        <label class="inputs-section__people-label" for="people">Number of People</label>
+        <input class="inputs-section__people-input" id="people" type="number" value="5">
+      </div>
 
     </div>
     <div class="result-container">
       <div class="results">
-        <div>
+        <div class="results__tips">
           <p class="results__tip-amount">Tip Amount</p>
           <p class="results__tip-person">/ person</p>
         </div>
         <p class="results__tip-value">4.27</p>
-        <div>
+        <div class="results__tips">
           <p class="results__total-amount">Total</p>
           <p class="results__total-person">/ person</p>
         </div>   
-        <p class="results__tip-value">32.79</p>  
+        <p class="results__tip-total">32.79</p>  
       </div>
-      <button class="results__btn">Reset</button>
+      <button class="results__btn">RESET</button>
     </div>
   </section>
   
