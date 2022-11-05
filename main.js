@@ -28,6 +28,11 @@ peopleInput.addEventListener("input", ()=>{
     peopleValue = parseFloat(peopleInput.value)
     calculation()
 })
+btnReset.addEventListener("click", ()=>{
+    tipTotal.innerText = 0
+    tipAmount.innerText = 0
+})
+
 
 
 
