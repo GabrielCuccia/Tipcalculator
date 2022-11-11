@@ -35,6 +35,7 @@ peopleInput.addEventListener("input", ()=>{
     if (peopleValue == 0 || isNaN(peopleValue) ){
         peopleInput.style.borderColor = "rgb(164, 68, 68)"
         error.classList.add("alert")
+        
         reset()
         
     }
@@ -69,6 +70,8 @@ btnCustom.addEventListener("click", ()=>{
 function calculation(){
     tipAmount.innerText = ((billValue * btnValue / 100) / peopleValue).toFixed(2)
     tipTotal.innerText = (((billValue * btnValue / 100) + billValue) / peopleValue).toFixed(2)
+  
+   
 }
 function reset(){
     tipTotal.innerText = 0
