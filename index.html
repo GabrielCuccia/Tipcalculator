@@ -22,7 +22,7 @@
     <div class="inputs-section">
 
       <label class="inputs-section__bill-label" for="bill">Bill</label>
-      <input class="inputs-section__bill-input" id="bill" type="number" value="100">
+      <input class="inputs-section__bill-input" maxlength="6" id="bill" type="number" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" value="100">
 
       <fieldset class="btns">
         <legend class="btns__legend">Select Tip %</legend>
@@ -31,12 +31,12 @@
         <button class="btns__button">15%</button>
         <button class="btns__button">20%</button>
         <button class="btns__button">25%</button>
-        <input class="btns__custom" type="number" placeholder="Custom">
+        <input  class="btns__custom" type="number" placeholder="Custom">
       </fieldset>
 
       <div class="number-of-people">
         <label class="inputs-section__people-label" for="people">Number of People <span id="alert"></span></label>
-        <input class="inputs-section__people-input" id="people" type="number" value="5">
+        <input maxlength="6" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="inputs-section__people-input" id="people" type="number" value="5">
       </div>
 
     </div>
