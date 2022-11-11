@@ -67,6 +67,14 @@ body {
 .inputs-section__bill-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+.alert{
+  color: rgb(164, 68, 68);
+  font-size: 0.7em;
+}
+.alert::after{
+  content: "can`t be zero";
+}
+
 
 .btns {
   border: none;
